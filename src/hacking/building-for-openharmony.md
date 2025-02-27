@@ -164,6 +164,14 @@ The value of the variable must be a file path to a valid `.json` file with the s
 
 ## Building servoshell
 
+### Install prerequisites:
+Building servoshell uses the bindgen cli interface. Hence, you need to install it, for example using cargo:
+```commandline
+cargo install bindgen-cli
+```
+
+Packaging the HAP requires to have Java installed. Java 11, 17, 21, 23 were reported to be working. Install as you wish in accordance with your OS.
+
 Before building servo you will need to set some environment variables.
 [direnv](https://direnv.net) is a convenient tool that can automatically set these variables based on an `.envrc` file, but you can also use any other method to set the required environment variables.
 
